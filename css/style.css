@@ -1,0 +1,133 @@
+body {
+  background-color: #ffffff;
+  margin: 0px;
+}
+.header {
+  background-color: #ffffff;
+  height: 600px;
+  margin-bottom: 40px;
+}
+.main_container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  height: auto;
+  margin-bottom: 30px;
+}
+.section:after {
+  content: ".";
+  display: block;
+  clear: left;
+  visibility: hidden;
+}
+.portfolio_section {
+  width: 80% ;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.portfolio_section:after {
+  content: ".";
+  display: block;
+  clear: left;
+  visibility: hidden;
+}
+#about {
+  background-color: #ff7f00;
+}
+#portfolio {
+  background-color: #7f007f;
+}
+#skills {
+  background-color: #ff0000;
+}
+#contact {
+  background-color: #00ff00;
+}
+@media screen and (max-width: 800px) {
+  .main_container {
+    width: 100%;
+  }
+}
+.menu {
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  position: fixed;
+  margin: 0px;
+}
+.nav {
+  width: 60%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
+}
+@media screen and (max-width: 800px) {
+  .nav {
+    width: 100%;
+  }
+}
+.menu .nav ul {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+.menu .nav ul li {
+  width: 25%;
+  height: 50px;
+  float: left;
+  list-style-type: none;
+}
+.menu .nav ul li #about {
+  background-color: #ff7f00;
+}
+.menu .nav ul li #portfolio {
+  background-color: #7f007f;
+}
+.menu .nav ul li #skills {
+  background-color: #ff0000;
+}
+.menu .nav ul li #contact {
+  background-color: #00ff00;
+}
+.portfolio_section img {
+  height: auto;
+  width: 32%;
+  float: left;
+  margin: 5px;
+}
+@media screen and (max-width: 1200px) {
+  .portfolio_section img {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfolio_section img {
+    float: none;
+    width: 100%;
+  }
+}
+#owl-header {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#owl-header .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1200px) {
+  #owl-header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
