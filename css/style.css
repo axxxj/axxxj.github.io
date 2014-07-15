@@ -2,13 +2,8 @@ body {
   background-color: #ffffff;
   margin: 0px;
 }
-.header {
-  background-color: #ffffff;
-  height: 600px;
-  margin-bottom: 40px;
-}
 .main_container {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,11 +17,13 @@ body {
   clear: left;
   visibility: hidden;
 }
+.section_padding {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .portfolio_section {
-  width: 80% ;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -48,70 +45,153 @@ body {
 #contact {
   background-color: #00ff00;
 }
+@media screen and (max-width: 1400px) {
+  .section_padding {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .section_padding {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
 @media screen and (max-width: 800px) {
-  .main_container {
-    width: 100%;
+  .section_padding {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 .menu {
   width: 100%;
-  height: 50px;
-  z-index: 1000;
-  position: fixed;
+  height: 70px;
+  z-index: 2;
+  border: none;
   margin: 0px;
-}
-.nav {
-  width: 60%;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
   box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
 }
+.nav {
+  width: 40%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#menu_logo {
+  float: left;
+  margin-left: 0px;
+  width: 70px;
+  height: 70px;
+  background-color: #ff0000;
+}
+.menu .nav a {
+  display: block;
+  line-height: 64px;
+  width: 25%;
+  height: 70px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+#menu_about {
+  background-color: #ffffff;
+}
+#menu_about:hover {
+  background-color: #ff7f00;
+}
+#menu_portfolio {
+  background-color: #ffffff;
+}
+#menu_portfolio:hover {
+  background-color: #7f007f;
+}
+#menu_skills {
+  background-color: #ffffff;
+}
+#menu_skills:hover {
+  background-color: #ff0000;
+}
+#menu_contact {
+  background-color: #ffffff;
+}
+#menu_contact:hover {
+  background-color: #00ff00;
+}
+@media screen and (max-width: 1100px) {
+  .nav {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 800px) {
   .nav {
     width: 100%;
+    float: left;
   }
-}
-.menu .nav ul {
-  border: none;
-  padding: 0px;
-  margin: 0px;
-}
-.menu .nav ul li {
-  width: 25%;
-  height: 50px;
-  float: left;
-  list-style-type: none;
-}
-.menu .nav ul li #about {
-  background-color: #ff7f00;
-}
-.menu .nav ul li #portfolio {
-  background-color: #7f007f;
-}
-.menu .nav ul li #skills {
-  background-color: #ff0000;
-}
-.menu .nav ul li #contact {
-  background-color: #00ff00;
+  .menu {
+    padding-top: 5px;
+    height: 110px;
+  }
+  #menu_logo {
+    float: none;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .portfolio_section img {
   height: auto;
-  width: 32%;
+  width: 45%;
   float: left;
   margin: 5px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .portfolio_section img {
-    width: 48%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 800px) {
   .portfolio_section img {
     float: none;
     width: 100%;
+  }
+}
+.header {
+  background-image: url('../images/site/header_bg_01.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0% 50%;
+  background-color: #ffffff;
+  height: 600px;
+  margin-bottom: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+.header_inner {
+  width: 287px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    height: 300px;
+  }
+  .header_inner {
+    height: 215.25px;
+    width: 215.25px;
+    margin-top: 45px;
+  }
+  .header_inner img {
+    height: 215.25px;
+    width: 215.25px;
   }
 }
 #owl-header {
