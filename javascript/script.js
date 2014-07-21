@@ -1,4 +1,15 @@
 $(document).ready(function() {
-	$('a').fluidbox();
-  
+
+	$('.gallery').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: 'a', // the selector for gallery item
+			type: 'image',
+			gallery: {
+			  enabled: 	true,
+			  preload: 	[0,1]
+			}
+		});
+	}); 
+
+
 });

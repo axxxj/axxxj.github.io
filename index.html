@@ -7,7 +7,9 @@
     <title>AJ Portfolio</title>
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/fluidbox.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- <link href="css/uikit.css" rel="stylesheet"> -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,84 +19,428 @@
     <![endif]-->
     
   </head>
-<body>
+<body class="portfolio_body">
 
-  <div class="menu">
+  <!-- <div class="menu">
     <div id="menu_logo"></div>
     <div class="nav">
-      <a id="menu_about" href="">About</a>
-      <a id="menu_portfolio" href="">Portfolio</a>
-      <a id="menu_skills" href="">Skills</a>
-      <a id="menu_contact" href="">Contact</a>
+      <a id="menu_about" href="">ABOUT</a>
+      <a id="menu_portfolio" href="">PORTFOLIO</a>
+      <a id="menu_skills" href="">CV &amp; SKILLS</a>
+      <a id="menu_contact" href="">CONTACT</a>
     </div>
+  </div> -->
+
+  <nav class="uk-navbar uk-navbar-attached">
+    <div class="uk-container uk-container-center">
+      <ul class="uk-navbar-nav">
+          <li><a id="menu_about" href="">About</a></li>
+          <li><a id="menu_illustrations" href="">Illustration</a></li>
+          <li><a id="menu_portfolio" href="">User Interface Design</a></li>
+          <li><a id="menu_portfolio" href="">Game Art</a></li>
+          <li><a id="menu_portfolio" href="">Technical Art</a></li>
+          <li><a id="menu_skills" href="">CV &amp; Skills</a></li>
+          <li><a id="menu_contact" href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="header">
+      <div class="header_vertical_center">
+        <div class="uk-container uk-container-center uk-text-center">
+          <img src="images/site/logo_large.png">
+        </div>
+      </div>   
   </div>
 
-  <div class="main_container">
-
-    <div class="header">
-      <div class="header_inner">
-        <img src="images/site/logo_large.png">
-      </div>
-      
-    </div>
-
-    <div id="about" class="section section_padding">
-      <h3>About...</h3>
+  <div class="section section_about">
+    <div class="uk-container uk-container-center uk-text-center">
+      <h2 class="uk-heading-large">Hello</h2>
+      <img class="uk-border-circle" src="images/site/photo.jpg" alt="ME!" width="100px">
+      <p class="uk-text-large">
+        You seem to have stumbled upon my portfolio, I hope you like it!
+      </p>
       <p>
-        &ldquo;Welcome to my Portfolio. <br>
-        My Name is <b>Andrew James</b>, I am a 3D/2D artist working in the computer games industry in the UK. <br>
-
-        I am a highly <b>Versatile</b>, <b>Creative</b> artist with a very strong grasp of the <b>Technical</b> side of art. 
-        I have worked in most areas within a team including Character Art, Technical Art and Concept Art. Recently I have been focused on User Interface Graphic Design and Implementation.&rdquo;
-        Please scroll down to explore some of the things I do and I&#39;ll try to explain my skills with a combination of  words and pretty pictures, enjoy!
+        I'm AJ and I like to create all sorts of visually pleasing things!
+        <br> Have a look at some of the work I have produced below, thanks.
       </p>
     </div>
+  </div>
 
-    <div id="portfolio" class="section section_padding">
+  <div class="section section_illustration"> <!-- Section Illustration -->
 
-      <div class="portfolio_section">
-        <div class="portfolio_section_header">
-          <h3>SECTION</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <div class="uk-container uk-container-center"> <!-- Container -->
+    
+      <div class="gallery"> <!-- Start of Gallery -->
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <h2 class="uk-heading-large">Illustrations</h2> <!-- UI -->
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_01.jpg">
+              <img src="images/pics/ui_concept_01.jpg">
+            </a>
+          </div>
+        
         </div>
 
-        <a href="images/pics/ui_concept_01.jpg">
-          <img src="images/pics/ui_concept_01.jpg">
-        </a>
 
-        <a href="images/pics/ui_concept_02.jpg">
-          <img src="images/pics/ui_concept_02.jpg">
-        </a>
+        <div class="uk-grid" data-uk-grid-margin>
 
-        <a href="images/pics/ui_concept_03.jpg">
-          <img src="images/pics/ui_concept_03.jpg">
-        </a>
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_02.jpg">
+              <img src="images/pics/ui_concept_02.jpg">
+            </a>
+          </div>
 
-        <a href="images/pics/ui_concept_04.jpg">
-          <img src="images/pics/ui_concept_04.jpg">
-        </a>
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_03.jpg">
+              <img src="images/pics/ui_concept_03.jpg">
+            </a>
+          </div>
 
-        <a href="images/pics/ui_concept_05.jpg">
-          <img src="images/pics/ui_concept_05.jpg">
-        </a>
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_04.jpg">
+              <img src="images/pics/ui_concept_04.jpg">
+            </a>
+          </div>
+        
+        </div>
 
-      </div>
-      
-    </div>
 
-    <div id="skills" class="section section_padding">
-      HELLO
-    </div>
+        <div class="uk-grid" data-uk-grid-margin>
 
-    <div id="contact" class="section section_padding">
-      HELLO
-    </div>
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_05.jpg">
+              <img src="images/pics/ui_concept_05.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_06.jpg">
+              <img src="images/pics/ui_concept_06.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+      </div> <!-- End of Gallery -->
+
+    </div> <!-- End of Container -->
     
-  </div>
+  </div> <!-- End Section Illustration -->
+
+
+
+
+    <div class="section section_ui"> <!-- Section UI -->
+
+    <div class="uk-container uk-container-center"> <!-- Container -->
+    
+      <div class="gallery"> <!-- Start of Gallery -->
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <h2 class="uk-heading-large">User Interface Design</h2> <!-- UI -->
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_01.jpg">
+              <img src="images/pics/ui_concept_01.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_02.jpg">
+              <img src="images/pics/ui_concept_02.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_03.jpg">
+              <img src="images/pics/ui_concept_03.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_04.jpg">
+              <img src="images/pics/ui_concept_04.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_05.jpg">
+              <img src="images/pics/ui_concept_05.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_06.jpg">
+              <img src="images/pics/ui_concept_06.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+      </div> <!-- End of Gallery -->
+
+    </div> <!-- End of Container -->
+    
+  </div> <!-- End Section ui -->
+
+
+
+    <div class="section section_3d"> <!-- Section 3D Modelling -->
+
+    <div class="uk-container uk-container-center"> <!-- Container -->
+    
+      <div class="gallery"> <!-- Start of Gallery -->
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <h2 class="uk-heading-large">Game Art</h2> <!-- UI -->
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_01.jpg">
+              <img src="images/pics/ui_concept_01.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_02.jpg">
+              <img src="images/pics/ui_concept_02.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_03.jpg">
+              <img src="images/pics/ui_concept_03.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_04.jpg">
+              <img src="images/pics/ui_concept_04.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_05.jpg">
+              <img src="images/pics/ui_concept_05.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_06.jpg">
+              <img src="images/pics/ui_concept_06.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+      </div> <!-- End of Gallery -->
+
+    </div> <!-- End of Container -->
+    
+  </div> <!-- End Section 3d art -->
+
+
+
+<div class="section section_tech"> <!-- Section Tech -->
+
+    <div class="uk-container uk-container-center"> <!-- Container -->
+    
+      <div class="gallery"> <!-- Start of Gallery -->
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <h2 class="uk-heading-large">Technical Art</h2>
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_01.jpg">
+              <img src="images/pics/ui_concept_01.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_02.jpg">
+              <img src="images/pics/ui_concept_02.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_03.jpg">
+              <img src="images/pics/ui_concept_03.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-3">
+            <a href="images/pics/ui_concept_04.jpg">
+              <img src="images/pics/ui_concept_04.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_05.jpg">
+              <img src="images/pics/ui_concept_05.jpg">
+            </a>
+          </div>
+
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_06.jpg">
+              <img src="images/pics/ui_concept_06.jpg">
+            </a>
+          </div>
+        
+        </div>
+
+
+      </div> <!-- End of Gallery -->
+
+    </div> <!-- End of Container -->
+    
+  </div> <!-- End Section Tech -->
+
+
+
+
+<div class="section section_skills"> <!-- Section Skills -->
+
+    <div class="uk-container uk-container-center"> <!-- Container -->
+
+      <h2 class="uk-heading-large  uk-text-center">Skills</h2>
+      <p class="uk-text-large  uk-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> 
+
+      <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
+
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="uk-width-medium-1-3 ">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      
+      </div>
+
+
+      <!-- <div class="uk-grid uk-margin-large-top" data-uk-grid-margin> -->
+
+      <hr class="uk-grid-divider">
+
+        <div class="uk-panel uk-panel-box uk-width-medium-4-6 uk-container-center">
+          <h2 class="uk-panel-title">CV</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+      <!-- </div> -->
+
+    </div> <!-- End of Container -->
+    
+  </div> <!-- End Section Skills -->
+
+
+
+
+<div class="section section_contact"> <!-- Section contacts -->
+
+    <div class="uk-container uk-container-center"> <!-- Container -->
+
+      <h2 class="uk-heading-large  uk-text-center">Contact</h2>
+
+      <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
+
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Phone</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="uk-width-medium-1-3 ">
+          <h2 class=" uk-text-center">Email</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Post</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      
+      </div>
+
+    </div> <!-- End of Container -->
+    
+  </div> <!-- End Section Contact -->
+
+
+
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascript/jquery-1.11.1.min.js"></script>
-    <script src="javascript/jquery.fluidbox.min.js"></script>
+    <script src="javascript/jquery.magnific-popup.min.js"></script>
+    <script src="javascript/uikit.min.js"></script>
     <script src="javascript/script.js"></script>
 </body>
 </html>
