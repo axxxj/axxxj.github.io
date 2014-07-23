@@ -6788,7 +6788,9 @@ a.uk-thumbnail:focus {
   background-color: #76b8be;
 }
 .section_ui {
+  background-image: url("../images/site/test_bg.png");
   background-color: #d65c55;
+  overflow: hidden;
 }
 .section_3d {
   background-color: #61c2a3;
