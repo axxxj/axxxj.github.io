@@ -11,7 +11,11 @@ $(document).ready(function() {
 		});
 	}); 
 
-	var s = skrollr.init();
+	if ($(window).width() > 768) {
+
+		var s = skrollr.init();
+
+	}
 
 
 });
