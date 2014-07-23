@@ -11,7 +11,7 @@ $(document).ready(function() {
 		});
 	}); 
 
-	if ($(window).width() > 768) {
+	if ($(window).width() > 1024) {
 
 		var s = skrollr.init();
 
