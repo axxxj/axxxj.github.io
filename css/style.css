@@ -6788,12 +6788,13 @@ a.uk-thumbnail:focus {
   background-color: #76b8be;
 }
 .section_ui {
-  background-image: url("../images/site/test_bg.png");
   background-color: #d65c55;
-  overflow: hidden;
 }
 .section_3d {
   background-color: #61c2a3;
+}
+.section_concept {
+  background-color: #e4985c;
 }
 .section_tech {
   background-color: #9664c8;
@@ -6807,4 +6808,7 @@ a.uk-thumbnail:focus {
 .test {
   height: 350px;
   overflow: hidden;
+}
+.uk-grid img {
+  width: 100%;
 }
