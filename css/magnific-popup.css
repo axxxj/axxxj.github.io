@@ -283,8 +283,9 @@ img.mfp-img {
   cursor: auto; }
 
 .mfp-title {
+  font-size: 16px;
   text-align: left;
-  line-height: 18px;
+  line-height: 20px;
   color: #f3f3f3;
   word-wrap: break-word;
   padding-right: 36px; }

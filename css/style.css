@@ -6818,3 +6818,29 @@ a.uk-thumbnail:focus {
 .uk-grid img {
   width: 100%;
 }
+.divider {
+  width: 100%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  overflow: hidden;
+}
+#first-divider {
+  background-image: url("../images/site/test_bg.png");
+  background-color: #642459;
+  height: 200px;
+}
+#second-divider {
+  background-image: url("../images/site/test_bg.png");
+  background-color: #642459;
+  height: 100px;
+}
+#third-divider {
+  background-image: url("../images/site/test_bg.png");
+  background-color: #642459;
+  height: 100px;
+}
