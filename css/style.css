@@ -6574,6 +6574,12 @@ a.uk-thumbnail:focus {
 /* Tablet and bigger */
 @media (min-width: 768px) {
   .uk-heading-large {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 960px) {
+  .uk-heading-large {
     font-size: 52px;
     line-height: 64px;
   }
