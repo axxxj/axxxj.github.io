@@ -6794,17 +6794,32 @@ a.uk-thumbnail:focus {
 .section_illustration {
   background-color: #76b8be;
 }
+.down-arrow-illustration {
+  fill: #76b8be;
+}
 .section_ui {
-  background-color: #d65c55;
+  background-color: #db737f;
+}
+.down-arrow-ui {
+  fill: #db737f;
 }
 .section_3d {
   background-color: #61c2a3;
 }
+.down-arrow-3d {
+  fill: #61c2a3;
+}
 .section_concept {
   background-color: #e4985c;
 }
+.down-arrow-concept {
+  fill: #e4985c;
+}
 .section_tech {
   background-color: #9664c8;
+}
+.down-arrow-tech {
+  fill: #9664c8;
 }
 .section_skills {
   background-color: #bb7389;
@@ -6835,20 +6850,20 @@ a.uk-thumbnail:focus {
   padding-top: 40px;
 }
 .left-base-border {
-  height: 35px;
+  height: 22px;
   width: 50%;
   float: left;
   margin-top: 40px;
   margin-right: -50px;
 }
 .center-base-border {
-  height: 35px;
+  height: 22px;
   width: 100px;
   float: left;
   margin-top: 40px;
 }
 .right-base-border {
-  height: 35px;
+  height: 22px;
   width: 50%;
   float: left;
   margin-top: 40px;
