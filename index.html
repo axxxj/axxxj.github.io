@@ -21,24 +21,30 @@
   </head>
 <body class="portfolio_body">
 
-  <!-- <div class="menu">
-    <div id="menu_logo"></div>
-    <div class="nav">
-      <a id="menu_about" href="">ABOUT</a>
-      <a id="menu_portfolio" href="">PORTFOLIO</a>
-      <a id="menu_skills" href="">CV &amp; SKILLS</a>
-      <a id="menu_contact" href="">CONTACT</a>
-    </div>
-  </div> -->
+
+
+<!-- ******************** NAV ******************** -->
+
 
   <nav class="uk-navbar uk-navbar-attached">
     <div class="uk-container uk-container-center">
       <ul class="uk-navbar-nav">
           <li><a id="menu_about" href="">About</a></li>
-          <li><a id="menu_illustrations" href="">Illustration</a></li>
-          <li><a id="menu_portfolio" href="">User Interface Design</a></li>
-          <li><a id="menu_portfolio" href="">Game Art</a></li>
-          <li><a id="menu_portfolio" href="">Technical Art</a></li>
+
+          <li class="uk-parent" data-uk-dropdown>
+            <a href="">Portfolio <i class="uk-icon-caret-down"></i></a>
+            <div class="uk-dropdown uk-dropdown-navbar">
+              <ul class="uk-nav uk-nav-navbar">
+                <li class="uk-nav-header">Portfolio</li>
+                <li><a href="#menu-personal">Personal Art</a></li>
+                <li><a href="#menu-ui">User Interface Art</a></li>
+                <li><a href="#menu-game">Game Art</a></li>
+                <li><a href="#menu-tech">Technical Art</a></li>
+              </ul>
+            </div>
+          </li>
+
+          
           <li><a id="menu_skills" href="">CV &amp; Skills</a></li>
           <li><a id="menu_contact" href="">Contact</a></li>
       </ul>
@@ -46,6 +52,8 @@
   </nav>
 
 
+
+<!-- ******************** HEADER ******************** -->
 
 
   <div class="header">
@@ -55,6 +63,10 @@
         </div>
       </div>   
   </div>
+
+
+<!-- ******************** ABOUT ******************** -->
+
 
   <div class="section section_about">
     <div class="uk-container uk-container-center uk-text-center">
@@ -71,26 +83,43 @@
   </div>
 
 
-  <div class="divider" id="first-divider">
+
+<!-- ******************** PERSONAL ART ******************** -->
+
+  <div id="menu-personal"></div>
+
+  <div class="divider" id="personal-divider">
+
     <div class="uk-container uk-container-center">
+
       <div class="uk-grid" data-uk-grid-margin>
+
         <div class="uk-width-medium-1-2">
+
           <h2 class="uk-heading-large uk-text-center">
             Personal Art
           </h2>
+        
         </div>
+        
         <div class="uk-width-medium-1-2">
+
           <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
         </div>
+
       </div>
+
     </div>
+
     <div class="left-base-border"><div class="section_illustration base-border-padding-left"></div></div>
     <div class="center-base-border"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 100 22" enable-background="new 0 0 100 22" xml:space="preserve"><polygon class="down-arrow-illustration" fill="#FF0000" points="50,22 100,0 100,22 0,22 0,0 "/></svg></div>
     <div class="right-base-border"><div class="section_illustration base-border-padding-right"></div></div>
+
   </div>
 
 
-  <div class="section section_illustration"> <!-- Section Illustration -->
+  <div class="section section_illustration"> <!-- Section Personal -->
 
     <div class="uk-container uk-container-center"> <!-- Container -->
     
@@ -98,12 +127,6 @@
 
 
         <div class="uk-grid" data-uk-grid-margin>
-
-          <div class="uk-width-medium-1-2">
-            <!-- <h2 class="uk-heading-large">My Experiments</h2> 
-            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> -->
-            
-          </div>
 
           <div class="uk-width-medium-1-2">
             <a href="images/experiments/Forest.jpg">
@@ -159,18 +182,18 @@
         
         </div>
 
-
-        
-
-
       </div> <!-- End of Gallery -->
 
     </div> <!-- End of Container -->
     
-  </div> <!-- End Section Illustration -->
+  </div> <!-- End Section Personal -->
 
 
-  <div class="divider" id="first-divider">
+
+<!-- ******************** UI ART ******************** -->
+  <div id="menu-ui"></div>
+
+  <div class="divider" id="ui-divider">
     <div class="uk-container uk-container-center">
       <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-2">
@@ -200,14 +223,14 @@
           <div class="uk-grid" data-uk-grid-margin>
 
             <div class="uk-width-medium-1-2">
-              <h2 class="uk-heading-large">User Interface Art</h2> <!-- UI -->
-              <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-              
+              <a href="images/ui/main.jpg" title="Spong Bob Square Pants - Surf and Skate &copy; Nickelodeon">
+                <img src="images/ui/thumbs/main.jpg">
+              </a>
             </div>
 
             <div class="uk-width-medium-1-2">
-              <a href="images/ui/Awesome_Meter.jpg">
-                <img src="images/ui/thumbs/Awesome_Meter.jpg">
+              <a href="images/ui/main_alt.jpg" title="Spong Bob Square Pants - Surf and Skate &copy; Nickelodeon">
+                <img src="images/ui/thumbs/main_alt.jpg">
               </a>
             </div>
           
@@ -216,20 +239,37 @@
 
           <div class="uk-grid" data-uk-grid-margin>
 
-            <div class="uk-width-medium-1-3">
-              <a href="images/ui/main.jpg">
-                <img src="images/ui/thumbs/main.jpg">
+          <div class="uk-width-medium-1-3">
+              <a href="images/ui/bknb_ui_04.jpg" title="Banjo Kazooie Nuts &amp; Bolts &copy; Microsoft">
+                <img src="images/ui/thumbs/bknb_ui_04.jpg">
               </a>
             </div>
 
             <div class="uk-width-medium-1-3">
-              <a href="images/ui/main_alt.jpg">
-                <img src="images/ui/thumbs/main_alt.jpg">
+              <a href="images/ui/bknb_ui_06.jpg" title="Banjo Kazooie Nuts &amp; Bolts &copy; Microsoft">
+                <img src="images/ui/thumbs/bknb_ui_06.jpg">
               </a>
             </div>
 
             <div class="uk-width-medium-1-3">
-              <a href="images/ui/options.jpg">
+              <a href="images/ui/sports_ui_02.jpg" title="Kinect Sports &copy; Microsoft">
+                <img src="images/ui/thumbs/sports_ui_02.jpg">
+              </a>
+            </div>
+          
+          </div>
+
+
+          <div class="uk-grid" data-uk-grid-margin>
+
+            <div class="uk-width-medium-1-2">
+              <a href="images/ui/Awesome_Meter.jpg" title="Spong Bob Square Pants - Surf and Skate &copy; Nickelodeon">
+                <img src="images/ui/thumbs/Awesome_Meter.jpg">
+              </a>
+            </div>
+
+            <div class="uk-width-medium-1-2">
+              <a href="images/ui/options.jpg" title="Spong Bob Square Pants - Surf and Skate &copy; Nickelodeon">
                 <img src="images/ui/thumbs/options.jpg">
               </a>
             </div>
@@ -239,55 +279,21 @@
 
           <div class="uk-grid" data-uk-grid-margin>
 
-            <div class="uk-width-medium-1-2">
-              <a href="images/ui/bknb_ui_04.jpg">
-                <img src="images/ui/thumbs/bknb_ui_04.jpg">
-              </a>
-            </div>
-
-            <div class="uk-width-medium-1-2">
-              <a href="images/ui/bknb_ui_06.jpg">
-                <img src="images/ui/thumbs/bknb_ui_06.jpg">
-              </a>
-            </div>
-          
-          </div>
-
-
-          <div class="uk-grid" data-uk-grid-margin>
-
             <div class="uk-width-medium-1-3">
-              <a href="images/ui/ui_concept_03.jpg">
+              <a href="images/ui/ui_concept_03.jpg" title="&copy; Microsoft">
                 <img src="images/ui/thumbs/ui_concept_03.jpg">
               </a>
             </div>
 
             <div class="uk-width-medium-1-3">
-              <a href="images/ui/ui_concept_04.jpg">
+              <a href="images/ui/ui_concept_04.jpg" title="&copy; Microsoft">
                 <img src="images/ui/thumbs/ui_concept_04.jpg">
               </a>
             </div>
 
             <div class="uk-width-medium-1-3">
-              <a href="images/ui/ui_concept_06.jpg">
+              <a href="images/ui/ui_concept_06.jpg" title="&copy; Microsoft">
                 <img src="images/ui/thumbs/ui_concept_06.jpg">
-              </a>
-            </div>
-          
-          </div>
-
-
-          <div class="uk-grid" data-uk-grid-margin>
-
-            <div class="uk-width-medium-1-2">
-              <a href="images/ui/sports_ui_02.jpg">
-                <img src="images/ui/thumbs/sports_ui_02.jpg">
-              </a>
-            </div>
-
-            <div class="uk-width-medium-1-2">
-              <a href="images/ui/sports_ui_03.jpg">
-                <img src="images/ui/thumbs/sports_ui_03.jpg">
               </a>
             </div>
           
@@ -301,7 +307,27 @@
   </div> <!-- End Section ui -->
 
 
-  <div class="divider" id="third-divider"></div>
+
+<!-- ******************** GAME ART ******************** -->
+  <div id="menu-game"></div>
+
+  <div class="divider" id="game-divider">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-2">
+          <h2 class="uk-heading-large uk-text-center">
+            Game Art
+          </h2>
+        </div>
+        <div class="uk-width-medium-1-2">
+          <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div>
+    </div>
+    <div class="left-base-border"><div class="section_3d base-border-padding-left"></div></div>
+    <div class="center-base-border"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 100 22" enable-background="new 0 0 100 22" xml:space="preserve"><polygon class="down-arrow-3d" fill="#FF0000" points="50,22 100,0 100,22 0,22 0,0 "/></div>
+    <div class="right-base-border"><div class="section_3d base-border-padding-right"></div></div>
+  </div>
 
 
   <div class="section section_3d"> <!-- Section Game Art -->
@@ -314,31 +340,14 @@
         <div class="uk-grid" data-uk-grid-margin>
 
           <div class="uk-width-medium-1-2">
-            <h2 class="uk-heading-large">Game Art</h2> <!-- UI -->
-            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            
-          </div>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/game/jack.jpg"  title="Modelling &amp; Animation (Illustrations by Ed Bryan). Jack and the Beanstalk &copy; Nosy Crow">
-              <img src="images/game/thumbs/jack.jpg">
-            </a>
-          </div>
-        
-        </div>
-
-
-        <div class="uk-grid" data-uk-grid-margin>
-
-          <div class="uk-width-medium-1-2">
             <a href="images/game/lrrh.jpg" title="Modelling &amp; Animation (Illustrations by Ed Bryan). Little Red Riding Hood &copy; Nosy Crow">
               <img src="images/game/thumbs/lrrh.jpg">
             </a>
           </div>
 
           <div class="uk-width-medium-1-2">
-            <a href="images/game/frog.jpg" title="Modelling &amp; Animation (Illustrations by Barry Tranter). Rounds: Franklin Frog &copy; Nosy Crow">
-              <img src="images/game/thumbs/frog.jpg">
+            <a href="images/game/jack.jpg"  title="Modelling &amp; Animation (Illustrations by Ed Bryan). Jack and the Beanstalk &copy; Nosy Crow">
+              <img src="images/game/thumbs/jack.jpg">
             </a>
           </div>
         
@@ -412,80 +421,31 @@
 
     </div> <!-- End of Container -->
     
-  </div> <!-- End Section 3d art -->
+  </div> <!-- End Section game art -->
 
 
 
-    <div class="section section_concept"> <!-- Section Concept Art -->
+  
+<!-- ******************** TECH ART ******************** -->
+    <div id="menu-tech"></div>
 
-    <div class="uk-container uk-container-center"> <!-- Container -->
-    
-      <div class="gallery"> <!-- Start of Gallery -->
-
-
+    <div class="divider" id="tech-divider">
+      <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin>
-
           <div class="uk-width-medium-1-2">
-            <h2 class="uk-heading-large">Concept Art</h2> <!-- UI -->
+            <h2 class="uk-heading-large uk-text-center">
+              Technical Art
+            </h2>
+          </div>
+          <div class="uk-width-medium-1-2">
             <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            
           </div>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/concept/Junko_Style_01.jpg">
-              <img src="images/concept/thumbs/Junko_Style_01.jpg">
-            </a>
-          </div>
-        
         </div>
-
-
-        <div class="uk-grid" data-uk-grid-margin>
-
-          <div class="uk-width-medium-1-3">
-            <a href="images/concept/visual_01.jpg">
-              <img src="images/concept/thumbs/visual_01.jpg">
-            </a>
-          </div>
-
-          <div class="uk-width-medium-1-3">
-            <a href="images/concept/visual_02.jpg">
-              <img src="images/concept/thumbs/visual_02.jpg">
-            </a>
-          </div>
-
-          <div class="uk-width-medium-1-3">
-            <a href="images/concept/visual_04.jpg">
-              <img src="images/concept/thumbs/visual_04.jpg">
-            </a>
-          </div>
-        
-        </div>
-
-
-        <div class="uk-grid" data-uk-grid-margin>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/concept/stack_up.jpg">
-              <img src="images/concept/thumbs/stack_up.jpg">
-            </a>
-          </div>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/concept/town_02.jpg">
-              <img src="images/concept/thumbs/town_02.jpg">
-            </a>
-          </div>
-        
-        </div>
-
-
-      </div> <!-- End of Gallery -->
-
-    </div> <!-- End of Container -->
-    
-  </div> <!-- End Section concept art -->
-
+      </div>
+      <div class="left-base-border"><div class="section_tech base-border-padding-left"></div></div>
+      <div class="center-base-border"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 100 22" enable-background="new 0 0 100 22" xml:space="preserve"><polygon class="down-arrow-tech" fill="#FF0000" points="50,23 100,0 100,23 0,23 0,0 "/></div>
+      <div class="right-base-border"><div class="section_tech base-border-padding-right"></div></div>
+    </div>
 
 
 <div class="section section_tech"> <!-- Section Tech -->
@@ -498,9 +458,8 @@
         <div class="uk-grid" data-uk-grid-margin>
 
           <div class="uk-width-medium-1-2">
-            <h2 class="uk-heading-large">Technical Art</h2>
+            <h2 class="uk-heading-medium">Jigsaw Creator</h2>
             <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            
           </div>
 
           <div class="uk-width-medium-1-2">
@@ -514,42 +473,37 @@
 
         <div class="uk-grid" data-uk-grid-margin>
 
-          <div class="uk-width-medium-1-3">
-            <a href="images/pics/ui_concept_02.jpg">
-              <img src="images/pics/ui_concept_02.jpg">
-            </a>
+          <div class="uk-width-medium-1-2">
+            <h2 class="uk-heading-medium">Various Tools</h2>
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           </div>
 
-          <div class="uk-width-medium-1-3">
-            <a href="images/pics/ui_concept_03.jpg">
-              <img src="images/pics/ui_concept_03.jpg">
-            </a>
-          </div>
-
-          <div class="uk-width-medium-1-3">
-            <a href="images/pics/ui_concept_04.jpg">
-              <img src="images/pics/ui_concept_04.jpg">
+          <div class="uk-width-medium-1-2">
+            <a href="images/pics/ui_concept_01.jpg">
+              <img src="images/pics/ui_concept_01.jpg">
             </a>
           </div>
         
         </div>
 
+        <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
 
-        <div class="uk-grid" data-uk-grid-margin>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/pics/ui_concept_05.jpg">
-              <img src="images/pics/ui_concept_05.jpg">
-            </a>
-          </div>
-
-          <div class="uk-width-medium-1-2">
-            <a href="images/pics/ui_concept_06.jpg">
-              <img src="images/pics/ui_concept_06.jpg">
-            </a>
-          </div>
-        
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+
+        <div class="uk-width-medium-1-3 ">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+          <h2 class=" uk-text-center">Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      
+      </div>
 
 
       </div> <!-- End of Gallery -->
@@ -559,6 +513,9 @@
   </div> <!-- End Section Tech -->
 
 
+<div class="divider-small"></div>
+
+<!-- ******************** SKILLS ******************** -->
 
 
 <div class="section section_skills"> <!-- Section Skills -->
@@ -605,6 +562,10 @@
 
 
 
+<div class="divider-small"></div>
+
+<!-- ******************** CONTACT ******************** -->
+
 
 <div class="section section_contact"> <!-- Section contacts -->
 
@@ -635,9 +596,31 @@
     
   </div> <!-- End Section Contact -->
 
+<div class="footer">
 
+  <div class="uk-container uk-container-center">
 
+    <div class="uk-grid" data-uk-grid-margin>
 
+      <div class="uk-width-medium-1-3">
+        <p>All images &copy; Andrew James unless stated otherwise.</p>
+      </div>
+
+      <!-- <div class="uk-width-medium-1-3">.</div> -->
+
+      <div class="uk-width-medium-2-3">
+        Created with <a href="http://getuikit.com/">UIKit</a>, 
+        <a href="http://jquery.com/">JQuery</a>, 
+        <a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a>, 
+        <a href="http://lesscss.org/">LESS</a> and 
+        <a href="http://gruntjs.com/">Grunt</a>, all mixed together in <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascript/jquery-1.11.1.min.js"></script>
     <script src="javascript/jquery.magnific-popup.min.js"></script>

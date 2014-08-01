@@ -6572,13 +6572,31 @@ a.uk-thumbnail:focus {
 /* Headings
  ========================================================================== */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  .uk-heading-medium {
+    font-size: 24px;
+    line-height: 31.5px;
+  }
   .uk-heading-large {
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 768px) {
+  .uk-heading-medium {
+    font-size: 31.5px;
+    line-height: 40.5px;
+  }
+  .uk-heading-large {
+    font-size: 42px;
+    line-height: 54px;
   }
 }
 @media (min-width: 960px) {
+  .uk-heading-medium {
+    font-size: 39px;
+    line-height: 48px;
+  }
   .uk-heading-large {
     font-size: 52px;
     line-height: 64px;
@@ -6849,6 +6867,11 @@ a.uk-thumbnail:focus {
   margin-top: 2px;
   padding-top: 40px;
 }
+.divider-small {
+  background-color: #ffffff;
+  height: 2px;
+  width: 100%;
+}
 .left-base-border {
   height: 22px;
   width: 50%;
@@ -6877,19 +6900,27 @@ a.uk-thumbnail:focus {
 .base-border-padding-right {
   width: 100%;
   height: 100%;
-  margin-left: 50px;
+  margin-left: 49px;
 }
-#first-divider {
+#personal-divider {
   background-image: url("../images/site/header_bg_04.jpg");
   background-color: #c0ff8c;
 }
-#second-divider {
+#ui-divider {
   background-image: url("../images/site/header_bg_04.jpg");
   background-color: #642459;
-  height: 150px;
 }
-#third-divider {
+#game-divider {
   background-image: url("../images/site/header_bg_04.jpg");
   background-color: #642459;
-  height: 150px;
+}
+#tech-divider {
+  background-image: url("../images/site/header_bg_04.jpg");
+  background-color: #642459;
+}
+.footer {
+  background-color: #424242;
+  color: #b2b2b2;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
