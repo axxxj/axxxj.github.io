@@ -6790,6 +6790,7 @@ a.uk-thumbnail:focus {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-color: #ffffff;
+  position: fixed;
   margin-bottom: 0px;
   box-sizing: content-box;
   height: 600px;
@@ -6897,7 +6898,6 @@ body {
   padding-top: 40px;
 }
 .divider-small {
-  background-color: #ffffff;
   height: 2px;
   width: 100%;
 }
