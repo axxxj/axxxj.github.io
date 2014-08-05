@@ -6790,7 +6790,6 @@ a.uk-thumbnail:focus {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-color: #ffffff;
-  position: fixed;
   margin-bottom: 0px;
   box-sizing: content-box;
   height: 600px;
@@ -6816,6 +6815,20 @@ a.uk-thumbnail:focus {
   overflow: hidden;
 }
 @media (max-width: 768px) {
+  .header {
+    background-image: url('../images/site/header_bg_02.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 1024 1024;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    height: 600px;
+    z-index: -1;
+    overflow: hidden;
+  }
   .header-img {
     /* Set rules to fill background */
     min-height: 70%;
