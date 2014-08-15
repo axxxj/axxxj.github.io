@@ -11,11 +11,11 @@ $(document).ready(function() {
 		});
 	}); 
 
-	if ($(window).width() > 1024) {
+	// if ($(window).width() > 1024) {
 
-		var s = skrollr.init();
+	// 	var s = skrollr.init();
 
-	}
+	// }
 
 
 });

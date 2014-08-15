@@ -1846,7 +1846,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
    Component: Navbar
  ========================================================================== */
 .uk-navbar {
-  background: #eeeeee;
+  background: rgba(0, 0, 0, 0);
   color: #444444;
 }
 /*
@@ -1908,8 +1908,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
-  background-color: #f5f5f5;
-  color: #444444;
+  color: #ffffff;
   /* 3 */
   outline: none;
 }
@@ -1974,7 +1973,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #0077dd;
 }
 .uk-navbar-content > a:not([class]):hover {
-  color: #005599;
+  color: #ffffff;
 }
 /* Sub-objects: `uk-navbar-brand`
  ========================================================================== */
@@ -5805,7 +5804,7 @@ a.uk-thumbnail:focus {
  ========================================================================== */
 .uk-dropdown-navbar {
   margin-top: 0;
-  background: #f5f5f5;
+  background: rgba(245, 245, 245, 0.6);
   color: #444444;
 }
 .uk-open > .uk-dropdown-navbar {
@@ -6832,6 +6831,9 @@ a.uk-thumbnail:focus {
 .section {
   padding-top: 40px;
   padding-bottom: 80px;
+  background-image: url("../images/site/darken_gradient.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .section_about {
   background-color: #e3882e;
@@ -6864,16 +6866,16 @@ a.uk-thumbnail:focus {
   fill: #e4985c;
 }
 .section_tech {
-  background-color: #9664c8;
+  background-color: #c09ee2;
 }
 .down-arrow-tech {
-  fill: #9664c8;
+  fill: #c09ee2;
 }
 .section_skills {
-  background-color: #bb7389;
+  background-color: #a6cfe7;
 }
 .section_contact {
-  background-color: #e4985c;
+  background-color: #e3882e;
 }
 .test {
   height: 350px;
@@ -6986,7 +6988,6 @@ a.uk-thumbnail:focus {
   padding-bottom: 20px;
 }
 .aj-nav {
-  -webkit-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.3);
+  position: absolute;
+  width: 100%;
 }
