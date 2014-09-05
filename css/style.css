@@ -6780,6 +6780,10 @@ a.uk-thumbnail:focus {
     page-break-after: avoid;
   }
 }
+body:after {
+  content: url('../images/tech/Jigsaw_01.jpg') url('../images/tech/Jigsaw_02.jpg') url('../images/tech/Jigsaw_02.jpg') url('../images/tech/Tools_01.jpg') url('../images/tech/Tools_02.jpg') url('../images/tech/Tools_03.jpg');
+  display: none;
+}
 .header {
   background-image: url('../images/site/header_bg.jpg');
   -webkit-background-size: cover;
@@ -6980,6 +6984,9 @@ a.uk-thumbnail:focus {
     background-image: url("../images/site/tech_header.jpg");
     background-color: #642459;
   }
+}
+#imageSwapBG {
+  background-color: #424242;
 }
 .footer {
   background-color: #424242;
