@@ -42,20 +42,20 @@
   display: block;
   float: right;
   position: relative;
-  top: 15%;
+  top: 16%;
   margin-right: 10px; }
   @media only screen and (min-width: 1280px) {
     .title-logo-sub {
-      width: 184px; } }
+      width: 179px; } }
   @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .title-logo-sub {
-      width: 147.2px; } }
+      width: 143.2px; } }
   @media only screen and (min-width: 640px) and (max-width: 1023px) {
     .title-logo-sub {
-      width: 110.4px; } }
+      width: 107.4px; } }
   @media only screen and (min-width: 0px) and (max-width: 639px) {
     .title-logo-sub {
-      width: 73.6px; } }
+      width: 71.6px; } }
 
 .header-image {
   position: absolute;

@@ -44,7 +44,7 @@ $(document).ready(function(){
         if(!revealToggle)
         {
             $(".reveal-panel").addClass("reveal-anim");
-            $(this).html("see less...");
+            $(this).html("close...");
             revealToggle = true;
         }else
         {
