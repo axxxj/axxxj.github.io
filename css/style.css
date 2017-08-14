@@ -340,7 +340,8 @@
   color: lightgrey; }
 
 #contact {
-  background-color: #F2EFE9; }
+  background-color: #F2EFE9;
+  padding-bottom: 30px; }
 
 a.social img {
   width: 50px;
