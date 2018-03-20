@@ -61,6 +61,15 @@ $(document).ready(function(){
 
 	$( ".video-overlay" ).click(function(e) {
 		$(this).hide();
+    });
+    
+    $( "a.video-inline" ).click(function(e) {
+		var vcode = $(this).find(".video").attr("data");
+		$(this).find(".video").html('<iframe src="https://www.youtube.com/embed/' + vcode + '" frameborder="0" allowfullscreen></iframe>');
+	});
+
+	$( ".video-overlay" ).click(function(e) {
+		$(this).hide();
 	});
 
 });
