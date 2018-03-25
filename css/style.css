@@ -179,6 +179,12 @@
     .max-width-wrapper {
       max-width: 480px; } }
 
+.wrapper-col {
+  background-color: #F2EFE9; }
+
+.wrapper-white {
+  background-color: white; }
+
 .colour-section-wrapper {
   width: 100%; }
 
@@ -253,9 +259,6 @@
       width: 100%;
       margin-right: 0; } }
 
-#tech-art {
-  background-color: #F2EFE9; }
-
 .skill-section {
   margin-bottom: 70px; }
 
@@ -303,7 +306,7 @@
     text-align: center;
     color: #f15a5a;
     border: 2px solid #f15a5a;
-    background: #f1eee8;
+    background: transparent;
     text-decoration: none;
     margin: 5px; }
   .tech-nav a:hover {
@@ -324,7 +327,7 @@
 
 @keyframes fadeBackgroundColour {
   from {
-    background-color: #f1eee8;
+    background-color: transparent;
     color: #f15a5a; }
   to {
     background-color: #f15a5a;
@@ -340,7 +343,6 @@
   color: lightgrey; }
 
 #contact {
-  background-color: #F2EFE9;
   padding-bottom: 30px; }
 
 a.social img {
