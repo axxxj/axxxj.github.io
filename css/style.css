@@ -332,6 +332,21 @@
   to {
     background-color: #f15a5a;
     color: white; } }
+  @media only screen and (min-width: 0px) and (max-width: 639px) {
+    .tech-nav a {
+      width: 45px;
+      height: 45px;
+      font-size: 25px;
+      line-height: 40px;
+      margin: 2px; }
+    .tech-nav a:hover {
+      width: 41px;
+      height: 41px;
+      line-height: 36px; }
+    .tech-nav .selected {
+      width: 45px;
+      height: 45px;
+      line-height: 40px; } }
 
 .art-section {
   margin-bottom: 4em; }
