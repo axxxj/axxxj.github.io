@@ -129,6 +129,22 @@
   float: left;
   margin: 0px 40px 0px 40px;
   opacity: 0.4; }
+  @media only screen and (min-width: 1280px) {
+    #face {
+      height: 175px;
+      margin: 0px 40px 0px 40px; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    #face {
+      height: 175px;
+      margin: 0px 40px 0px 40px; } }
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    #face {
+      height: 100px;
+      margin: 0px 20px 0px 20px; } }
+  @media only screen and (min-width: 0px) and (max-width: 639px) {
+    #face {
+      height: 85px;
+      margin: 12px 15px 0px 15px; } }
 
 .spacer {
   height: 7px; }
