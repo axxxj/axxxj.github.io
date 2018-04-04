@@ -1,19 +1,34 @@
-window.onload = function any_function_name()
-{
-    var animation = lottie.loadAnimation({
-        container: document.getElementById('header-anim'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: '../scripts/data.json'
-      });
-
-      new WOW().init();
-}
+// window.onload = function any_function_name()
+// {
+    
+// }
 
 
 
 $(document).ready(function(){
+
+    if(document.getElementById('header-anim'))
+    {
+        var isNotMobile = window.matchMedia("only screen and (min-width : 1024px)");
+
+        if (isNotMobile.matches) {
+            //Conditional script here
+            
+            $("#header-image").hide();
+
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('header-anim'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '../scripts/data.json'
+            });
+        }else{
+            $("#header-anim").hide();
+        }
+    }
+
+    new WOW().init();
 
     var galleryOptions = {captionPosition: "outside"};
 
