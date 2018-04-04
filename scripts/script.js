@@ -9,6 +9,10 @@ $(document).ready(function(){
 
     if(document.getElementById('header-anim'))
     {
+        var dataPath = document.getElementById('header-anim').getAttribute("value");
+
+        console.log(dataPath);
+
         var isNotMobile = window.matchMedia("only screen and (min-width : 1024px)");
 
         if (isNotMobile.matches) {
@@ -21,7 +25,7 @@ $(document).ready(function(){
                 renderer: 'svg',
                 loop: true,
                 autoplay: true,
-                path: '../scripts/data.json'
+                path: dataPath
             });
         }else{
             $("#header-anim").hide();
