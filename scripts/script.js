@@ -1,4 +1,16 @@
-new WOW().init();
+window.onload = function any_function_name()
+{
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('header-anim'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '../scripts/data.json'
+      });
+    
+    new WOW().init();
+
+}
 
 $(document).ready(function(){
 
