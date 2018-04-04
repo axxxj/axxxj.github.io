@@ -7,10 +7,9 @@ window.onload = function any_function_name()
         autoplay: true,
         path: '../scripts/data.json'
       });
-    
-    new WOW().init();
-
 }
+
+new WOW().init();
 
 $(document).ready(function(){
 
